@@ -2,7 +2,7 @@
 
 This is a Matlab implementation of the microbial metabolic model in [arXiv.2210.11167](https://doi.org/10.48550/arXiv.2210.11167) addressing optimal growth strategies under several environmental conditions.
 
-### A brief introduction to the theoretical framwork
+### A brief introduction to the theoretical framework
 
 We assume a minimal microbial model suitable for a population of *E.Coli* in a carbon-limited media, whose full description is provided by two quantities, the expenditure $\epsilon(x)$ and the specific uptake $q(x)$ governed by the internal degree of freedom $x$. Under this assumption, the growth rate is given by
 ### $\qquad \qquad \mu(x,s) = \frac{\phi}{w + sq(x) + \epsilon(x)}$
@@ -13,7 +13,8 @@ where $s$ is a *stress* variable modelling the environment, while $\phi$ and $w$
 
 See [arXiv.2210.11167](https://doi.org/10.48550/arXiv.2210.11167) for a detailed derivation.
 
-### Static environments. Implementation details.
+### Documentation
+#### Static environments
 In `main_script.m` it is possible to select each of the four environmental conditions studied in [arXiv.2210.11167](https://doi.org/10.48550/arXiv.2210.11167) and characterized by a set of *stress* distribution $p(s)$. By adjusting the variable `type_stress` one can select one of the following stress distribution:
 
 - `uniform` 

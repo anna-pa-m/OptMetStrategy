@@ -9,7 +9,7 @@ We assume a minimal microbial model suitable for a population of *E.Coli* in a c
 
 where $s$ is a *stress* variable modeling the environment, $\phi$ and $w$ are the fraction of proteome devoted to constitutively expressed proteins and the proteome share to be allocated to ribosome-affiliated proteins per unit of growth rate respectively. There exists an optimal value $\hat{x}\left(s\right)$ such that the growth rate is maximized. However, being $s$ a random variable distributed according to $p(s)$, cells face a certain degree of uncertainty about the environment and, therefore, the strategy to adopt. We denote as $p(x|s)$ the stochastic rule to choose $x$ for a given $s$ which at optimality is given by 
 
-### $\qquad \qquad p(x|s) \propto p(x)e^{-\beta \mu\left(x,s\right)}$
+### $\qquad \qquad p(x|s) \propto p(x)e^{\beta \mu\left(x,s\right)}$
 
 for any given $\beta$. See [arXiv.2210.11167](https://doi.org/10.48550/arXiv.2210.11167) for a detailed derivation.
 
